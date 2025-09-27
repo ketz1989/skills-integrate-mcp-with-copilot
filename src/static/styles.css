@@ -28,17 +28,18 @@ header h1 {
   margin-bottom: 10px;
 }
 
+
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
-  justify-content: center;
 }
 
 @media (min-width: 768px) {
-  main {
-    grid-template-columns: 2fr 1fr;
-  }
+.main {
+  flex-direction: column;
+  align-items: center;
 }
 
 section {
@@ -47,7 +48,37 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.register-student-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.register-email {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.register-btn {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.register-btn:hover {
+  background-color: #388e3c;
 }
 
 section h3 {
